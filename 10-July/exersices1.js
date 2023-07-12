@@ -98,9 +98,8 @@ equal or between 70 and 79 ===> C
 equal or between 80 and 89 ===> B
 equal or between 90 and 100 ===> A
 */
-let msrk
 let rate = 52 ; 
-switch (mark)
+switch (true)
 {  
     case ( rate >= 90 &&  rate <= 100) : 
     console.log ( "A");
@@ -154,13 +153,13 @@ for (var j = 0; j < arr.length; j++) {
 
 */
 
-var rows = 8;
-
-for (var i = 1; i <= rows; i++) {
-  var pattern = '';
+let rows = 8;
+let pattern = '';
+for (let i = 1; i <= rows; i++) {
+ 
   
-  for (var j = 1; j <= i; j++) {
-    pattern += j + ' ';
+  for (let j = i; j <= i; j++) {
+    pattern +=  j ;
   }
   
   console.log(pattern);
