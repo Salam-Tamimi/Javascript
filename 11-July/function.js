@@ -561,9 +561,11 @@ Ex: counter()
 
 */
 
-let count = 1;
+let count = 0;
+
 function counter() {
-    console.log (count++);
+  console.log (++count);
+   
 }
 counter();
 counter();
@@ -590,7 +592,7 @@ Ex: resetCounter()
 Ex: counter()
 => 1
 
-Ex: counter()
+Ex: c
 => 2
 
 Ex: resetCounter()
@@ -600,12 +602,15 @@ Ex: counter()
 => 1
 */
 
-let count2 = 0;
+
 function resetCounter(){
-  count2++;
-  console.log(count2);
-}
 console.log(count + " and the counter reset now")
+count=0;
+}
+
+resetCounter();
+counter()
+counter()
 resetCounter();
 resetCounter();
-resetCounter();
+counter()
