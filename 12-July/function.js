@@ -414,16 +414,12 @@ Ex: positive(-5)
 => 5
 
 */
+
 function positive (num){
-  if(num<0){
-   k= num *-1 
-  }else
-  k= num
-  console.log(k)
-  }
+  console.log(Math.abs(num))
+}
 positive(4)
 positive(-5)
-
 /*
 18
 Write a function called fullName
