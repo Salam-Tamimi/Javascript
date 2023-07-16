@@ -25,25 +25,60 @@ jordan.addEventListener ("click",function(){
 
 //task3
 
-font = document.getElementById("font")
-size = document.getElementById("size")
-style = document.getElementById("style")
-style2 = document.getElementById("style2")
-style3 = document.getElementById("style3")
-text = document.getElementById("text")
-// font.addEventListener ("click",function(){
-//     font.style.
-// })
-size.addEventListener ("click",function(){
-    text.style.fontSize= "15px"
-})
-style1.addEventListener ("click",function(){
-    text.italics()
-})
-style2.addEventListener ("click",function(){
-    text.bold()
-})
-style3.addEventListener ("click",function(){
-    text.underlined()
-})
+let Font = document.querySelectorAll('select');
+let inVal = document.querySelectorAll('input');
+let txt = document.querySelector('p');
+
+Font[0].addEventListener('change', function(){
+
+    if(Font[0].value == "Times New Roman"){
+        txt.style.fontFamily = "Times New Roman";
+    }
+    else if(Font[0].value == "Fantasy"){
+        txt.style.fontFamily = "Fantasy";
+    }
+
+});
+
+
+Font[1].addEventListener('change', function(){
+
+    if(Font[1].value == "10px"){
+        txt.style.fontSize = "10px";
+    }
+    else if(Font[1].value == "15px"){
+        txt.style.fontSize = "15px";
+    }
+
+});
+
+for(let i = 0; i < inVal.length; i++) {
+
+    inVal[i].addEventListener('change', function() {
+
+        if(inVal[i].checked) {
+
+            if(inVal[i].id == "italic") {
+                txt.style.fontStyle = 'italic';
+            }
+            else if (inVal[i].id == "bold") {
+                txt.style.fontWeight = 'bold';
+            }
+            else {
+                txt.style.textDecoration = 'underline';
+            }
+
+        }
+        else {
+
+            txt.style.fontStyle = 'normal';
+            txt.style.fontWeight = "normal";
+            txt.style.textDecoration = "none";
+            
+        }
+
+    });
+
+}
+
 
