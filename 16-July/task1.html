@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!-- task1 -->
+   <input type="color" id="pickcolor">
+    <script>
+        const color = document.getElementById('pickcolor');
+        color.addEventListener('change', function () {
+            var colorvalue = color.value;
+            sessionStorage.setItem('color', colorvalue);
+           document.body.style.backgroundColor = sessionStorage.getItem('color');
+        })
+        document.body.style.backgroundColor = sessionStorage.getItem('color');
+
+
+    </script>
+</body>
+</html>

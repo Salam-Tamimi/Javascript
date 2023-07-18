@@ -1,0 +1,33 @@
+
+[{
+    "name":"Salam",
+    "age":"24 years old",
+    "major": "Architect",
+    "university": "JUST",
+    "image": "img1.jpg"
+},
+
+{
+    "name":"Muna",
+    "age":"22 years old",
+    "major": "Engineer",
+    "university": "JUST",
+    "image": "img2.jpg"
+},
+
+{
+    "name":"Mohammed",
+    "age":"21 years old",
+    "major": "doctor",
+    "university": "yarmouk",
+    "image": "img3.jpg"
+},
+
+{
+    "name":"Islam",
+    "age":"23 years old",
+    "major": "developer",
+    "university": "yarmouk",
+    "image": "img4.jpg"
+}
+]
