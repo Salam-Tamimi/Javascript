@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>To Do List</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+    <style>
+        body{
+            background-color:rgb(190, 197, 197) ;
+        }
+        
+        button.round {
+            border-radius: 30px;
+            border: 2px solid white;
+            color:white;
+            font-size: 19px;
+        }
+        button{
+            box-shadow: 0px 2px 3px rgb(60, 88, 88);
+            width: 90px;
+            height: 50px;
+        }
+        .task {
+            border-bottom: rgb(128, 128, 128) solid 2px;
+            background-color: white;
+        }
+        .task:hover{
+            box-shadow: 0px 4px 15px rgb(76, 92, 92);
+            background-color: rgb(217, 234, 122);
+            scale: 1.02;
+        }
+    </style>
+  </head>
+  <body>
+    <div>
+        <!-- center div -->
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <!-- table -->
+                <div style="width: 50%;background-color: rgb(223, 223, 222);height: 600px;margin-top: 60px;box-shadow: 0px 3px 5px rgb(60, 88, 88);">
+                    <!-- header -->
+                        <div style="background-color: rgb(159, 158, 117);height: 70px;box-shadow: 0px 2px 3px rgb(60, 88, 88)">
+                            <h1 style="display: inline; padding-left: 35%;color: white;">To Do List</h1>
+                            <button class="round" id="add" style=" width: 90px; height: 50px;margin-left: 150px;background-color: rgb(22, 115, 222);">+Add</button>
+                        </div>
+                    <!-- //header// -->
+                    <!-- tasks -->
+                    <div id="tasks" style="padding: 20px;">
+                        <!-- task -->
+                        <div class="task" style="background-color: white;display: flex;height: 70px;padding-top: 3px;">
+                            <!-- task info -->
+                            <div style="width: 70%;">
+                                <h2 style="padding-left: 10px;">task 1</h2>
+                            </div>
+                            <!-- //task info// -->
+                            <!-- task actions -->
+                            <div>
+                                <button class="round" style="background-color: rgb(177, 23, 23);">Delete</button>
+                                <button class="round" style="background-color: rgb(23, 177, 41);">Update</button>
+                            </div>
+                            <!-- //task actions// -->
+                            
+                        </div>
+                        <!-- //task// -->
+                        <!-- task -->
+                        <div class="task" style="background-color: white;display: flex;height: 70px;padding-top: 3px;">
+                            <!-- task info -->
+                            <div style="width: 70%;">
+                                <h2 style="padding-left: 10px;">task 2</h2>
+                            </div>
+                            <!-- //task info// -->
+                            <!-- task actions -->
+                            <div>
+                                <button class="round" style="background-color: rgb(177, 23, 23);">Delete</button>
+                                <button class="round" style="background-color: rgb(23, 177, 41);">Update</button>
+                            </div>
+                            <!-- //task actions// -->
+                            
+                        </div>
+                        <!-- //task// -->
+                    </div>
+                    <!-- //tasks// -->
+                </div>
+             <!-- //table// -->
+        </div>
+        <!-- //center div// -->
+    </div>
+   
+
+
+      
+
+<script src="to do list .js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
